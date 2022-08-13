@@ -9,17 +9,17 @@ Gem::Specification.new do |spec|
   spec.description = "Simple wrapper for the FreshService API"
   spec.email = ["vikas95prasad@gmail.com"]
   spec.files += Dir.glob("lib/**/*.rb")
-  spec.homepage = "https://rubygems.org/gems/fresh_service"
+  spec.homepage = "https://rubygems.org/gems/fresh_service_api_v2_client"
   spec.licenses = ["MIT"]
-  spec.name = "fresh_service"
+  spec.name = "fresh_service_api_v2_client"
   spec.require_paths = ["lib"]
   spec.required_ruby_version = ">= 2.6.0"
   spec.required_rubygems_version = ">= 1.3.5"
   spec.summary = "Ruby toolkit for working with the Fresh Service API v2"
   spec.version = FreshService::VERSION.dup
-  spec.add_development_dependency "simplecov"
-  spec.add_development_dependency "bundler", "~> 2.2.10"
   spec.add_development_dependency "addressable"
+  spec.add_development_dependency "bundler", "~> 2.2.10"
+  spec.add_development_dependency "simplecov"
   spec.add_development_dependency "webmock", "~> 3.14.0"
   spec.add_dependency "activesupport", ">= 4.2.7"
   spec.add_dependency "faraday", ">= 0.17.0"
