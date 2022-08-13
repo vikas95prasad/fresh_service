@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'fresh_service/version'
+require "fresh_service/version"
 
 module FreshService
   # Default configuration options for {Client}
@@ -22,6 +22,8 @@ module FreshService
       # @return [String]
       def env
         Rails.env
+      rescue StandardError
+        "development"
       end
 
       # Default BASE PACKAGE_URL
@@ -33,7 +35,7 @@ module FreshService
       # Default user_agent
       # @return [String]
       def user_agent
-        "freshservice-api-client-#{FreshService::VERSION}"
+        "fresh-service-#{FreshService::VERSION}"
       end
 
       # Default api_endpoint FreshService URL for company

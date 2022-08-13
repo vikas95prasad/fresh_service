@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fresh_service (1.0.5)
+    fresh_service (1.0.0)
       activesupport (>= 4.2.7)
       faraday (>= 0.17.0)
       faraday_middleware (>= 0.11.0.1)
@@ -23,7 +23,7 @@ GEM
       rexml
     diff-lcs (1.5.0)
     docile (1.4.0)
-    faraday (1.10.0)
+    faraday (1.10.1)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -39,8 +39,8 @@ GEM
     faraday-em_synchrony (1.0.0)
     faraday-excon (1.1.0)
     faraday-httpclient (1.0.1)
-    faraday-multipart (1.0.3)
-      multipart-post (>= 1.2, < 3)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
@@ -52,7 +52,7 @@ GEM
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     minitest (5.15.0)
-    multipart-post (2.1.1)
+    multipart-post (2.2.3)
     parallel (1.21.0)
     parser (3.1.0.0)
       ast (~> 2.4.1)
@@ -108,6 +108,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-darwin-21
 
 DEPENDENCIES
   addressable

@@ -11,7 +11,7 @@ module FreshService
 
   # Current patch level.
   # @return [Integer]
-  PATCH = 5
+  PATCH = 0
 
   # Full release version.
   # @return [String]
