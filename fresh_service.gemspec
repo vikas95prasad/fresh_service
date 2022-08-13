@@ -6,7 +6,7 @@ require "fresh_service/version"
 
 Gem::Specification.new do |spec|
   spec.authors = ["Vikas Prasad"]
-  spec.description = "Simple wrapper for the FreshService API"
+  spec.description = "Simple wrapper for the FreshService API v2"
   spec.email = ["vikas95prasad@gmail.com"]
   spec.files += Dir.glob("lib/**/*.rb")
   spec.homepage = "https://rubygems.org/gems/fresh_service_api_v2_client"
@@ -28,4 +28,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.10"
   spec.add_development_dependency "rubocop-rails"
+  spec.metadata = {
+    "source_code_uri" => "https://github.com/vikas95prasad/fresh_service",
+    "documentation_uri" => "https://github.com/vikas95prasad/fresh_service",
+    "bug_tracker_uri" => "https://github.com/vikas95prasad/fresh_service/issues"
+  }
 end
