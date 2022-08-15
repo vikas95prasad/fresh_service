@@ -3,6 +3,7 @@ Ruby toolkit for the Fresh Service API V2.
 
 ## Table of Contents
 1. [Installation](#installation)
+2. [API Documentation](#api-documentation)
 2. [Making requests](#making-requests)
    1. [Initialization](#initialization)
    2. [Ticket](#ticket)
@@ -16,23 +17,45 @@ Ruby toolkit for the Fresh Service API V2.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fresh_service'
+gem 'fresh_service_api_v2_client'
 ```
 
 And then execute:
-
-    $ bundle install
+```ruby
+bundle install
+```
 
 Or install it yourself as:
+```ruby
+gem install fresh_service_api_v2_client
+```
 
-    $ gem install fresh_service
+Access the library in Ruby:
+```ruby
+require 'fresh_service_api_v2_client'
+```
+
+## API Documentation
+https://api.freshservice.com/
 
 ## Making requests
 ### Initialization
 ```ruby
 # client initialization
+
+ENV["FRESH_SERVICE_API_KEY"] = ''
+ENV["FRESH_SERVICE_ORG"] = ''
+
 client = FreshService::Client.new
 ```
+OR
+```ruby
+client = FreshService::Client.configure do |c|
+            c.organisation = 'xyz'
+            c.api_key = 'api_key'
+         end
+```
+
 ### Ticket
 ```ruby
 # Create a ticket
