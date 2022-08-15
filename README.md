@@ -4,13 +4,12 @@ Ruby toolkit for the Fresh Service API V2.
 ## Table of Contents
 1. [Installation](#installation)
 2. [API Documentation](#api-documentation)
-2. [Making requests](#making-requests)
+3. [Making requests](#making-requests)
    1. [Initialization](#initialization)
    2. [Ticket](#ticket)
    3. [Group](#group)
    4. [Service Request](#service-request)
-3. [Development](#development)
-5. [License](#license)
+4. [License](#license)
 
 
 ## Installation
@@ -92,19 +91,6 @@ client.create_service_request(display_id, options = {})
 # @see https://api.freshservice.com/#update_req_items_of_sr
 client.update_service_request(ticket_id, item_id, options = {})
 ```
-
-## Development
-If you want to run on Fresh Service locally
-
-    bin/bootstrap
-
-This will install gem dependencies and get you up and running. If you want
-to run a Ruby console, you can crank one up with:
-
-    bin/console
-
-Using the scripts in `./bin` instead of `bundle exec rspec`, `bundle
-console`, etc.  ensures your dependencies are up-to-date.
 
 ## License
 
