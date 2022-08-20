@@ -16,7 +16,7 @@ Ruby toolkit for the Fresh Service API V2.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'fresh_service_api_v2_client'
+gem 'fresh_service_api_v2_client', '~> 1.0.2'
 ```
 
 And then execute:
@@ -44,13 +44,19 @@ https://api.freshservice.com/
 
 ENV["FRESH_SERVICE_API_KEY"] = ''
 ENV["FRESH_SERVICE_ORG"] = ''
+```
 
+```ruby
 client = FreshService::Client.new
 ```
 OR
 ```ruby
+client = FreshService::Client.new(organisation: 'abc', api_key: 'api_key')
+```
+OR
+```ruby
 client = FreshService::Client.configure do |c|
-            c.organisation = 'xyz'
+            c.organisation = 'abc'
             c.api_key = 'api_key'
          end
 ```
